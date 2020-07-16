@@ -13,6 +13,9 @@ const styles = {
     },
     input: {
         marginRight: '1rem'
+    },
+    button: {
+        backgroundColor: 'red'
     }
 }
 
@@ -27,7 +30,7 @@ function ToDoItem({todo, index, onChange}) {
         &nbsp;
         {todo.title}
     </span>
-    <button>&times;</button>
+    <button style={styles.button}>&times;</button>
 </li>)
 }
 
